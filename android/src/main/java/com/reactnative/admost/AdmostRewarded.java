@@ -59,6 +59,12 @@ public class AdmostRewarded extends ReactContextBaseJavaModule {
             public void onClicked(String s) {
                 AdmostModule.sendEvent("didClickRewardedVideo", s);
             }
+
+            @Override
+            public void onStatusChanged(int i) {
+
+            }
+
             @Override
             public void onComplete(String s) {
                 AdmostModule.sendEvent("didCompleteRewardedVideo", s);
